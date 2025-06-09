@@ -1,23 +1,27 @@
 # THIS IS AN OPEN ALPHA! NOWHERE NEAR CLOSE TO COMPLETION!
 
-Why Open Alpha? Simply because the documentation for the new AME Wizard version is not ready, so i cannot fully work on the playbook yet. At this stage, this is basically a base i will work on.
+**https://github.com/fernbacher/Forged**
+
+* Why Open Alpha? 
+ * Simply because the documentation for the new AME Wizard version is not ready, so i cannot fully work on the playbook yet. **At this stage, this is basically a base i will work on.**
 
 Forged is an AME Wizard playbook for Windows 11 designed for gaming performance, low latency, and user privacy.
 
 It achieves this by aggressively removing a wide range of Windows components and applying deep system modifications.
 
 Key changes include:
+   * Complete Security Removal: Windows Defender, SmartScreen, and the Security Center are entirely removed. Kernel-level security mitigations (Spectre/Meltdown) are disabled.
+  *  Aggressive Component Stripping: Microsoft Edge, OneDrive, Cortana, Microsoft Store, Windows Backup, and most default UWP applications are eliminated.
+ *   Service & Feature Disabling: Disables non-essential background services.
+ *   Performance & Latency Tuning: Applies kernel, boot, and network tweaks designed to minimize system overhead and input latency.
+ *   Privacy Enforcement.
 
-    Complete Security Removal: Windows Defender, SmartScreen, and the Security Center are entirely removed. Kernel-level security mitigations (Spectre/Meltdown) are disabled.
-
-    Aggressive Component Stripping: Microsoft Edge, OneDrive, Cortana, Microsoft Store, Windows Backup, and most default UWP applications are eliminated.
-
-    Service & Feature Disabling: Disables non-essential background services.
-
-    Performance & Latency Tuning: Applies kernel, boot, and network tweaks designed to minimize system overhead and input latency.
-
-    Privacy Enforcement.
-
-This playbook is intended for dedicated gaming machines and expert users. It heavily compromises system security for performance gains.
+**This playbook is intended for dedicated gaming machines and expert users. It heavily compromises system security for performance gains.**
 
 This project is heavily inspired by [Revision](https://github.com/meetrevision).
+
+I've released this open alpha publicly simply because i need testers and feedback. Either use this discord server or the github issues inside the repository page.
+
+**This is meant to run on the current version of AME-Wizard, the future stable version will be made for the next AME-Wizard beta, which will support ISO injection directly from the AME-Wizard. I am also working on a post-installation tool.**
+
+Simply use it on a fresh stock Windows 11 installation.
