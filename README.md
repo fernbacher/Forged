@@ -1,27 +1,37 @@
-# THIS IS AN OPEN ALPHA! NOWHERE NEAR CLOSE TO COMPLETION!
+# Forged
 
-**https://github.com/fernbacher/Forged**
+Welcome to Forged. This is a simple, no-nonsense playbook for Windows 11 designed for gamers, power users, and anyone who wants a cleaner, faster, and more private OS without the bloat. It's built for the [AME Wizard](https://ameliorated.io/) and makes deep-level changes to create a stable and optimized system from a stock Windows installation.
 
-* Why Open Alpha? 
- * Simply because the documentation for the new AME Wizard version is not ready, so i cannot fully work on the playbook yet. **At this stage, this is basically a base i will work on.**
+## Core
 
-Forged is an AME Wizard playbook for Windows 11 designed for gaming performance, low latency, and user privacy.
+*   **Privacy-Focused:** Strips out invasive telemetry and data collection services.
+*   **Performance-Tuned:** Optimizes system services, registry settings, and power plans for lower latency and a smoother experience, especially in games.
+*   **Thoroughly Debloated:** Removes non-essential apps and features like Edge, OneDrive, and Teams.
 
-It achieves this by aggressively removing a wide range of Windows components and applying deep system modifications.
+## How to Use
 
-Key changes include:
-   * Complete Security Removal: Windows Defender, SmartScreen, and the Security Center are entirely removed. Kernel-level security mitigations (Spectre/Meltdown) are disabled.
-  *  Aggressive Component Stripping: Microsoft Edge, OneDrive, Cortana, Microsoft Store, Windows Backup, and most default UWP applications are eliminated.
- *   Service & Feature Disabling: Disables non-essential background services.
- *   Performance & Latency Tuning: Applies kernel, boot, and network tweaks designed to minimize system overhead and input latency.
- *   Privacy Enforcement.
+1.  Download the latest release of Forged from the **Releases** page on GitHub.
+2.  Get a compatible **Windows 11 ISO**. See the `playbook.conf` file for supported build numbers.
+3.  Download the latest **AME Wizard** from the official site.
+4.  Launch the AME Wizard, select your Windows 11 ISO, and then load the Forged `.apbx` file.
+5.  Follow the on-screen prompts, and you're good to go!
 
-**This playbook is intended for dedicated gaming machines and expert users. It heavily compromises system security for performance gains.**
+## ⚠️ A Word of Warning ⚠️
 
-This project is heavily inspired by [Revision](https://github.com/meetrevision).
+This playbook makes significant changes to your Windows system. It is intended for advanced users who understand the implications of removing core components.
 
-I've released this open alpha publicly simply because i need testers and feedback. Either use this discord server or the github issues inside the repository page.
+I am not responsible for any data loss or issues that may arise. **Always back up your important files before proceeding. Use at your own risk.**
 
-**This is meant to run on the current version of AME-Wizard, the future stable version will be made for the next AME-Wizard beta, which will support ISO injection directly from the AME-Wizard. I am also working on a post-installation tool.**
+Known issues that i am literally too burnt out to fix, i've worked on this for too many hours in the past week:
+ 
+ * Microsoft edge blank icon in the taskbar, its just a shitty shortcut that i forgot to remove, cant cause issues.
+ * The start menu is bloated, my approach failed to fix this, things such as `LinkedIn` and `Install Whatsapp` are simply there as icons and they are not functinoal, they can be removed by simply right-clicking them and removing them from the start menu.
+ * I forgot to include icons for the browser options, gradient is good enough so whatever.
 
-Simply use it on a fresh stock Windows 11 installation.
+Future plans, in **not** a very near future:
+
+* I'll be looking to implement [DirectStart](https://github.com/Lixkote/DirectStart) for the start menu.
+* Get away from explorerpatcher, for now, its there so you can have some customization at installation.
+* Full ISO injection compatibility with the next AME-Wizard beta update.
+* Blacksmith tool which will handle alot of the tasks the playbook does so its simpler for the user to revert tweaks and gain more compatibility back in Forged.
+* Someone to help me going forward because this is tiring as fuck, the playbooks available around the internet are 99.9% made by a team of users instead of one person.
